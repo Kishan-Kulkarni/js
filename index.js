@@ -29,8 +29,7 @@ app.get("/", async (req, res) => {
     const postData=await Post.find()
     const userData=await User.find()
     const a=Date.now()
-    console.log(b)
-    console.log(a)
+    console.log(a-b)
     res.json({status: "OK", postData: postData, userData: userData})
 })
 const port =process.env.PORT || 3000
